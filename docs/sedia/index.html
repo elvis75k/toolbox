@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="object_0 (1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="2" camera-orbit="30.53deg 63.01deg 2.358m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="-0.012283052573476283m 0.36467799958223246m -0.25419625011846025m" data-normal="0.11728200005414303m 0.5103131881480236m 0.8519538616999749m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">sedia di Re Ferdinando
+              Hotel (Ischia)</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.24055999337330228m -0.48476337646427414m 0.21540225822042403m" data-normal="0.05802455071963137m -0.09824871602921605m 0.9934688426480196m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">gamba rudimentale</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
